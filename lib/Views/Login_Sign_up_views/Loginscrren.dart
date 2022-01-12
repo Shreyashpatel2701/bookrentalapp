@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:auth_buttons/auth_buttons.dart';
 
 class LoginScreen extends StatefulWidget{
 
@@ -23,7 +24,7 @@ class _loginscrren extends State<LoginScreen>{
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-                height: height*0.4,
+                height: height*0.3,
                 width: height*0.3,
                 padding: EdgeInsets.symmetric(
                   vertical: 10
@@ -96,8 +97,60 @@ class _loginscrren extends State<LoginScreen>{
               ),  
               ),
 
+              Container(
 
+                width: width*0.8,
+                child: ElevatedButton(
+                  onPressed: () {  },
+                  child: Text("Login",style: TextStyle(decorationColor: Colors.white),),
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all<Color>(Color(0xff127EFD)),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(18.0),
+                          side: BorderSide(color: Color(0xff127EFD))
+                      ),),
+                   ),
+                ),
+              ),
 
+              SizedBox(height: 10,),
+              Container(
+                child: Text("or Login With",style: TextStyle(fontWeight: FontWeight.bold),),
+              ),
+
+              Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      width : width*0.1,
+                       height : height*0.1,
+                      child: InkWell(
+                        onTap: (){},
+                        child: Image.asset(
+                          'assets/Google.jpg',
+                        ),
+                      ),
+
+                    ),
+                   SizedBox(width: 25,),
+                    Container(
+                      width : width*0.1,
+                      height : height*0.1,
+                      child: InkWell(
+                        onTap: (){},
+                        child: Image.asset(
+                          'assets/apple.png',
+                        ),
+                      ),
+
+                    ),
+                  ],
+                ) ,
+              ),
+
+              Container(),
 
               Container(),
 

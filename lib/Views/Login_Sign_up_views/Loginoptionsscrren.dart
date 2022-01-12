@@ -1,3 +1,4 @@
+import 'package:bookrentalapp/Views/Login_Sign_up_views/loginsignuptab.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:auth_buttons/auth_buttons.dart';
@@ -30,14 +31,11 @@ class _loginoptionsscreen extends State<Loginoptionsscreen>{
                    vertical: 10
                   ),
                   height: height*0.4,
-                  width:  width*0.3,
+                  width:  width*0.4,
                   child: Image.asset('assets/readingbook.gif'),
                 ),
 
                 Container(
-                  padding: EdgeInsets.symmetric(
-                      vertical: 10
-                  ),
                   child: Text("How Would You Like To Register?",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),),
                 ),
 
@@ -47,7 +45,7 @@ class _loginoptionsscreen extends State<Loginoptionsscreen>{
                   ),
                   child: Text("Create Account to read and share the best books",style: TextStyle(fontWeight: FontWeight.normal),),
                 ),
-                SizedBox(height: 50,),
+                SizedBox(height: 35,),
 
                 GoogleAuthButton(
                   onPressed: () async {},
@@ -64,8 +62,11 @@ class _loginoptionsscreen extends State<Loginoptionsscreen>{
                   width: width *0.6,
                   height: height*0.04,
                   child: ElevatedButton.icon(
-                    onPressed: (){},
-                   label: Text("      Continue with email",textAlign: TextAlign.center,style: TextStyle(
+                    onPressed: (){   Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => tab_for_signup()),
+                    );},
+                   label: Text("Continue with email",textAlign: TextAlign.center,style: TextStyle(
                       color: Colors.black87
                      ),),
                     icon: Icon(Icons.email,color: Colors.blueAccent,),
@@ -92,7 +93,16 @@ class _loginoptionsscreen extends State<Loginoptionsscreen>{
                   padding: EdgeInsets.symmetric(
                       vertical: 5
                   ),
-                  child: Text("Login Here",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.0),),
+                  child: InkWell(
+                    onTap: (){
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => tab_for_signup()),
+                      );
+                    },
+                    child :Text("Login Here",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.0),),
+
+                  )
                 ),
               ],
             ),

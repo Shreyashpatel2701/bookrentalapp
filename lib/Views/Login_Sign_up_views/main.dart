@@ -1,4 +1,5 @@
-import 'package:bookrentalapp/Loginscrren.dart';
+import 'package:bookrentalapp/Views/Login_Sign_up_views/Loginscrren.dart';
+import 'package:bookrentalapp/Views/Login_Sign_up_views/loginsignuptab.dart';
 import 'package:flutter/material.dart';
 
 import 'Loginoptionsscrren.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: LoginScreen()
+      home: Loginoptionsscreen()
     );
   }
 }
