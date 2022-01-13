@@ -1,4 +1,4 @@
-import 'package:bookrentalapp/Views/Login_Sign_up_views/loginsignuptab.dart';
+import 'package:bookrentalapp/utils/loginsignuptab.dart';
 import 'package:flutter/material.dart';
 import 'package:auth_buttons/auth_buttons.dart';
 
