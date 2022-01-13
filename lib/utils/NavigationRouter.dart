@@ -7,4 +7,8 @@ class NavigationRouter {
   static void switchToLoginOption(BuildContext context) {
     Navigator.pushNamed(context, "/Loginoptionsscreen");
   }
+
+
+
+
 }
