@@ -26,7 +26,7 @@ class _loginoptionsscreen extends State<Loginoptionsscreen>{
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Container(
-                  padding: EdgeInsets.symmetric(
+                  padding: const EdgeInsets.symmetric(
                    vertical: 10
                   ),
                   height: height*0.4,
@@ -35,28 +35,28 @@ class _loginoptionsscreen extends State<Loginoptionsscreen>{
                 ),
 
                 Container(
-                  child: Text("How Would You Like To Register?",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),),
+                  child: const Text("How Would You Like To Register?",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold),),
                 ),
 
                 Container(
-                  padding: EdgeInsets.symmetric(
+                  padding: const EdgeInsets.symmetric(
                       vertical: 10
                   ),
-                  child: Text("Create Account to read and share the best books",style: TextStyle(fontWeight: FontWeight.normal),),
+                  child: const Text("Create Account to read and share the best books",style: TextStyle(fontWeight: FontWeight.normal),),
                 ),
-                SizedBox(height: 35,),
+                const SizedBox(height: 35,),
 
                 GoogleAuthButton(
                   onPressed: () async {},
                   text: "Continue With Google",
                 ),
 
-                SizedBox(height: 15,),
+                const SizedBox(height: 15,),
                 AppleAuthButton(
                   onPressed: (){},
                   text: "Continue With Apple",
                 ),
-                SizedBox(height: 15,),
+                const SizedBox(height: 15,),
                 Container(
                   width: width *0.6,
                   height: height*0.04,
@@ -65,31 +65,31 @@ class _loginoptionsscreen extends State<Loginoptionsscreen>{
                       context,
                       MaterialPageRoute(builder: (context) => tab_for_signup()),
                     );},
-                   label: Text("Continue with email",textAlign: TextAlign.center,style: TextStyle(
+                   label: const Text("Continue with email",textAlign: TextAlign.center,style: TextStyle(
                       color: Colors.black87
                      ),),
-                    icon: Icon(Icons.email,color: Colors.blueAccent,),
+                    icon: const Icon(Icons.email,color: Colors.blueAccent,),
                      style: ButtonStyle(
                      backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
                       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(2.0),
-                       side: BorderSide(color: Colors.white)
+                       side: const BorderSide(color: Colors.white)
                       ),),
                     ),
                   ),
                  ),
-                SizedBox(height: 10,),
+                const SizedBox(height: 10,),
 
                 Container(
-                  padding: EdgeInsets.symmetric(
+                  padding: const EdgeInsets.symmetric(
                       vertical: 10
                   ),
-                  child: Text("Already Part Of community?"),
+                  child: const Text("Already Part Of community?"),
                 ),
 
                 Container(
-                  padding: EdgeInsets.symmetric(
+                  padding: const EdgeInsets.symmetric(
                       vertical: 5
                   ),
                   child: InkWell(
@@ -99,7 +99,7 @@ class _loginoptionsscreen extends State<Loginoptionsscreen>{
                         MaterialPageRoute(builder: (context) => tab_for_signup()),
                       );
                     },
-                    child :Text("Login Here",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.0),),
+                    child :const Text("Login Here",style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 12.0),),
 
                   )
                 ),

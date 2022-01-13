@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'Views/Intro_screen/Splashscreen.dart';
 import 'Views/Intro_screen/FeatureScreen.dart';
-import 'Views/Login_Sign_up_views/Loginscrren.dart';
+import 'Views/Login_Sign_up_views/Loginoptionsscrren.dart';
 
 var routes = <String, WidgetBuilder>{
   "/FeatureScreen": (BuildContext context) =>  FeatureScreen(),
-  "/LoginScreen": (BuildContext context) => LoginScreen(),
+  "/Loginoptionsscreen": (BuildContext context) => Loginoptionsscreen(),
 };
 
 

@@ -113,7 +113,7 @@ class IntroScreenState extends State<IntroScreen> {
                               fontSize: 12.0),),
 
                       onPressed: () => lastPage
-                          ? NavigationRouter.switchToLogin(context)
+                          ? NavigationRouter.switchToLoginOption(context)
                           : controller.nextPage(
                           duration: const Duration(milliseconds: 300),
                           curve: Curves.easeIn),
