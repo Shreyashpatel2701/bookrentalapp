@@ -5,6 +5,6 @@ class NavigationRouter {
     Navigator.pushNamed(context, "/FeatureScreen");
   }
   static void switchToLogin(BuildContext context) {
-    Navigator.pushNamed(context, "/LoginScreen");
+    Navigator.pushNamed(context, "/Loginoptionsscreen");
   }
 }
