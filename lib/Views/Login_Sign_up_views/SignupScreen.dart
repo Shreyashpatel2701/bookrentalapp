@@ -84,18 +84,7 @@ class _loginscrren extends State<SignupScreen>{
               ),
               SizedBox(height: 10),
 
-              Container(
-                width: width*0.7,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Container(
-                      padding: EdgeInsets.symmetric(vertical: 10),
-                      child: Text("When you register You will accept our policy",style: TextStyle(color: Colors.redAccent),),
-                    ),
-                  ],
-                ),
-              ),
+
 
               Container(
 
@@ -132,6 +121,11 @@ class _loginscrren extends State<SignupScreen>{
                   ),
                 ),
               ),
+
+
+
+
+
 
 
               Container(),
