@@ -10,7 +10,7 @@ class _tab_for_signup extends State<tab_for_signup>{
   Widget build(BuildContext){
     return DefaultTabController(length: 2, child: Scaffold(
       appBar: AppBar(
-
+        automaticallyImplyLeading: false,
         backgroundColor: Colors.blueAccent,
 
         title: TabBar(
