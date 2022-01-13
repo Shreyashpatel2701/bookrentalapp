@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'Views/Intro_screen/Splashscreen.dart';
 import 'Views/Intro_screen/FeatureScreen.dart';
 import 'Views/Login_Sign_up_views/Loginoptionsscrren.dart';
+import 'utils/loginsignuptab.dart';
 
 var routes = <String, WidgetBuilder>{
   "/FeatureScreen": (BuildContext context) =>  FeatureScreen(),
   "/Loginoptionsscreen": (BuildContext context) => Loginoptionsscreen(),
+  "/tab_for_signup": (BuildContext context) => tab_for_signup(),
 };
 
 

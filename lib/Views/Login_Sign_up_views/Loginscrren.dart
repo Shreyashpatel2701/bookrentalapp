@@ -26,63 +26,67 @@ class _loginscrren extends State<LoginScreen>{
               Container(
                 height: height*0.3,
                 width: height*0.3,
-                padding: EdgeInsets.symmetric(
+                padding: const EdgeInsets.symmetric(
                   vertical: 10
                 ),
                 child:Image.asset('assets/readingbook.gif') ,
               ),
 
               Container(
-                padding: EdgeInsets.symmetric(vertical: 10),
-                child: Text("Login into Your Account",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
+                padding: const EdgeInsets.symmetric(vertical: 10),
+                child: const Text("Login into Your Account",
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18),
+                ),
               ),
 
-              SizedBox(height: 15),
+              const SizedBox(height: 15),
 
               Container(
               width: width *0.8,
                 child : TextField(
                 controller: emailController,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   hintText: "ENTER YOUR EMAIL",
                   labelText: "EMAIL",
                   contentPadding: EdgeInsets.symmetric(vertical: 0,horizontal: 10),
                   enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
+                    borderSide:  BorderSide(
                       color: Colors.blueAccent,
                     ),
 
                   ),
-                  border: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.blueAccent)
+                  border:  OutlineInputBorder(
+                      borderSide:  BorderSide(color: Colors.blueAccent)
                   ),
                 ),
               ),
               ),
-               SizedBox(height: 10),
+               const SizedBox(height: 10),
               
                Container(
                 width: width *0.8,
                 child : TextField(
                   obscureText: true,
                   controller: passwordController,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     hintText: "ENTER YOUR PASSWORD",
                     labelText: "PASSWORD",
-                    contentPadding: EdgeInsets.symmetric(vertical: 0,horizontal: 10),
-                    enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                    contentPadding:  EdgeInsets.symmetric(vertical: 0,horizontal: 10),
+                    enabledBorder:  OutlineInputBorder(
+                      borderSide:  BorderSide(
                         color: Colors.blueAccent,
                       ),
 
                     ),
-                    border: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.blueAccent)
+                    border:  OutlineInputBorder(
+                        borderSide:  BorderSide(color: Colors.blueAccent)
                     ),
                   ),
                 ),
               ),
-               SizedBox(height: 10),
+               const SizedBox(height: 10),
               
               Container(
                 width: width*0.7,
@@ -90,8 +94,8 @@ class _loginscrren extends State<LoginScreen>{
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Container(
-                    padding: EdgeInsets.symmetric(vertical: 10),
-                    child: Text("Forgot Password ?",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18,color: Colors.redAccent),),
+                    padding: const EdgeInsets.symmetric(vertical: 10),
+                    child: const Text("Forgot Password ?",style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 18,color: Colors.redAccent),),
                   ),
                 ],
               ),  
@@ -102,21 +106,21 @@ class _loginscrren extends State<LoginScreen>{
                 width: width*0.8,
                 child: ElevatedButton(
                   onPressed: () {  },
-                  child: Text("Login",style: TextStyle(decorationColor: Colors.white),),
+                  child: const Text("Login",style: TextStyle(decorationColor: Colors.white),),
                   style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(Color(0xff127EFD)),
+                    backgroundColor: MaterialStateProperty.all<Color>(const Color(0xff127EFD)),
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(18.0),
-                          side: BorderSide(color: Color(0xff127EFD))
+                          side: const BorderSide(color: Color(0xff127EFD))
                       ),),
                    ),
                 ),
               ),
 
-              SizedBox(height: 10,),
+              const SizedBox(height: 10,),
               Container(
-                child: Text("or Login With",style: TextStyle(fontWeight: FontWeight.bold),),
+                child: const Text("or Login With",style: const TextStyle(fontWeight: FontWeight.bold),),
               ),
 
               Container(
@@ -134,7 +138,7 @@ class _loginscrren extends State<LoginScreen>{
                       ),
 
                     ),
-                   SizedBox(width: 25,),
+                   const SizedBox(width: 25,),
                     Container(
                       width : width*0.1,
                       height : height*0.1,

@@ -7,8 +7,8 @@ class NavigationRouter {
   static void switchToLoginOption(BuildContext context) {
     Navigator.pushNamed(context, "/Loginoptionsscreen");
   }
-
-
-
+  static void switchToTabSignUpIN(BuildContext context) {
+    Navigator.pushNamed(context, "/tab_for_signup");
+  }
 
 }

@@ -13,7 +13,7 @@ class _tab_for_signup extends State<tab_for_signup>{
         automaticallyImplyLeading: false,
         backgroundColor: Colors.blueAccent,
 
-        title: TabBar(
+        title: const TabBar(
           isScrollable: false,
           labelColor: Colors.white,
           unselectedLabelColor: Colors.blueGrey,

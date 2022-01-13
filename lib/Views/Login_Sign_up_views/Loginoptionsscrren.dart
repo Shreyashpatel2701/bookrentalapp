@@ -1,4 +1,4 @@
-import 'package:bookrentalapp/utils/loginsignuptab.dart';
+import 'package:bookrentalapp/utils/NavigationRouter.dart';
 import 'package:flutter/material.dart';
 import 'package:auth_buttons/auth_buttons.dart';
 
@@ -61,10 +61,9 @@ class _loginoptionsscreen extends State<Loginoptionsscreen>{
                   width: width *0.6,
                   height: height*0.04,
                   child: ElevatedButton.icon(
-                    onPressed: (){   Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => tab_for_signup()),
-                    );},
+                    onPressed: (){
+                      NavigationRouter.switchToTabSignUpIN(context);
+                    },
                    label: const Text("Continue with email",textAlign: TextAlign.center,style: TextStyle(
                       color: Colors.black87
                      ),),
@@ -94,10 +93,7 @@ class _loginoptionsscreen extends State<Loginoptionsscreen>{
                   ),
                   child: InkWell(
                     onTap: (){
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => tab_for_signup()),
-                      );
+                      NavigationRouter.switchToTabSignUpIN(context);
                     },
                     child :const Text("Login Here",style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 12.0),),
 

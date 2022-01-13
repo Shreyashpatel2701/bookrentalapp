@@ -26,24 +26,24 @@ class _loginscrren extends State<SignupScreen>{
               Container(
                 height: height*0.3,
                 width: height*0.3,
-                padding: EdgeInsets.symmetric(
+                padding: const EdgeInsets.symmetric(
                     vertical: 10
                 ),
                 child:Image.asset('assets/readingbook.gif') ,
               ),
 
               Container(
-                padding: EdgeInsets.symmetric(vertical: 10),
-                child: Text("Register",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
+                padding: const EdgeInsets.symmetric(vertical: 10),
+                child: const Text("Register",style:  TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
               ),
 
-              SizedBox(height: 15),
+              const SizedBox(height: 15),
 
               Container(
                 width: width *0.8,
                 child : TextField(
                   controller: emailController,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     hintText: "ENTER YOUR EMAIL",
                     labelText: "EMAIL",
                     contentPadding: EdgeInsets.symmetric(vertical: 0,horizontal: 10),
@@ -59,14 +59,14 @@ class _loginscrren extends State<SignupScreen>{
                   ),
                 ),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
 
               Container(
                 width: width *0.8,
                 child : TextField(
                   obscureText: true,
                   controller: passwordController,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     hintText: "ENTER YOUR PASSWORD",
                     labelText: "PASSWORD",
                     contentPadding: EdgeInsets.symmetric(vertical: 0,horizontal: 10),
@@ -82,55 +82,45 @@ class _loginscrren extends State<SignupScreen>{
                   ),
                 ),
               ),
-              SizedBox(height: 10),
-
-
+              const SizedBox(height: 10),
 
               Container(
 
                 width: width*0.8,
                 child: ElevatedButton(
                   onPressed: () {  },
-                  child: Text("Register",style: TextStyle(decorationColor: Colors.white),),
+                  child: const Text("Register",style:  TextStyle(decorationColor: Colors.white),),
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all<Color>(Color(0xff127EFD)),
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(18.0),
-                          side: BorderSide(color: Color(0xff127EFD))
+                          side: const BorderSide(color: Color(0xff127EFD))
                       ),),
                   ),
                 ),
               ),
 
-              SizedBox(height: 15,),
+              const SizedBox(height: 15,),
 
               Container(
 
                 width: width*0.8,
                 child: ElevatedButton(
                   onPressed: () {  },
-                  child: Text("Cancel",style: TextStyle(decorationColor: Colors.black26),),
+                  child: const Text("Cancel",style: TextStyle(decorationColor: Colors.black26),),
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all<Color>(Colors.redAccent),
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(18.0),
-                          side: BorderSide(color: Colors.white)
+                          side: const BorderSide(color: Colors.white)
                       ),),
                   ),
                 ),
               ),
 
-
-
-
-
-
-
               Container(),
-
-
 
             ],
           ),
