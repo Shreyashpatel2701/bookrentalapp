@@ -1,9 +1,11 @@
+import 'package:bookrentalapp/Views/Profile/profile.dart';
+import 'package:bookrentalapp/utils/Bottomnavigation.dart';
 import 'package:flutter/material.dart';
 import 'Views/Intro_screen/Splashscreen.dart';
 import 'Views/Intro_screen/FeatureScreen.dart';
 import 'Views/Login_Sign_up_views/Loginoptionsscrren.dart';
 import 'utils/loginsignuptab.dart';
-import 'Profile/profile.dart';
+
 
 var routes = <String, WidgetBuilder>{
   "/FeatureScreen": (BuildContext context) =>  FeatureScreen(),
@@ -30,7 +32,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
         ),
         debugShowCheckedModeBanner: false,
-        home:ProfileScreen(),
+        home: Bottomnavigation(),
         routes: routes
     );
   }
