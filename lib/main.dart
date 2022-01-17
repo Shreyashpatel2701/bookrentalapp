@@ -3,6 +3,7 @@ import 'Views/Intro_screen/Splashscreen.dart';
 import 'Views/Intro_screen/FeatureScreen.dart';
 import 'Views/Login_Sign_up_views/Loginoptionsscrren.dart';
 import 'utils/loginsignuptab.dart';
+import 'Profile/profile.dart';
 
 var routes = <String, WidgetBuilder>{
   "/FeatureScreen": (BuildContext context) =>  FeatureScreen(),
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
         ),
         debugShowCheckedModeBanner: false,
-        home:const SplashScreen(),
+        home:ProfileScreen(),
         routes: routes
     );
   }
