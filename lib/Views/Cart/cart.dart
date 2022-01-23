@@ -87,7 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   top: 75.0,
                   left: 15.0,
                   child: Text(
-                    'My cart',
+                    'My Cart',
                     style: TextStyle(
                         fontFamily: 'Montserrat',
                         fontSize: 30.0,
