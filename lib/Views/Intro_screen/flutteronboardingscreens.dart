@@ -87,7 +87,7 @@ class IntroScreenState extends State<IntroScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: <Widget>[
-                    FlatButton(
+                    TextButton(
 
                       child: Text(lastPage ? "" : "SKIP",
                           style: const TextStyle(
